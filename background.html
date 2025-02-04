@@ -100,85 +100,21 @@
         </div>
       </div>
     </nav>
-<footer>
+
     <div class="container">
-      <h2>Looking for ways to be a social student?</h2>
-      <button id="getInvolvedButton">get !nvolved</button>
-      <div id="content"></div>
+      <h2>Background</h2>
+
+      <div id="content">
+        <a
+          >The first weeks in Uni are often exciting and full of an overwhelming
+          amount of opportunities for social interaction. After this initial
+          honeymoonphase fades, many students, including ourselves, feel lost.
+          Our project aims to support students going through this transition.</a
+        >
+        <img src="graph.png" width="475" height="200" alt="" style="padding:
+        4px"
+      </div>
     </div>
-    <script>
-      const getInvolvedButton = document.getElementById("getInvolvedButton");
-      const content = document.getElementById("content");
-
-      const options = [
-        {
-          type: "text",
-          content:
-            '<h2>AKA Filmclub</h2><img src="media/akafilm.jpeg" width=250" height="333"/><p>The AKA Film Club is a non-profit organisation that runs a cinema in a lecture hall in the Biology institute. Tickets cost €1.50 plus an additional €3.50 per semester for a membership card. It is a super easy way to get involved without too much hassle! You can go alone or with a friend and enjoy a new movie every Tuesday, Wednesday and Thursday.</p>',
-        },
-        {
-          type: "text",
-          content:
-            '<h2>Join a free dance class!</h2><img src="media/dancedancedance.jpeg" width=250" height="333"/><p>Tanzschule Gutmann offers incredible dance classes so why not challenge yourself and attend one? You have the opportunity to get four free lessons in any dance class of your choice. I went for an afro dance class and had a great time while also discovering that I am not the best dancer. But that is okay, I will get better with time. So why not try it yourself, it is free!</p>',
-        },
-        {
-          type: "text",
-          content:
-            '<h2>Go on a hike!</h2><img src="media/hike.jpeg" width=250" height="333"/><p>Freiburg is surrounded by nature and so many options for outdoor activities. Get a group of friends together (or strangers really) and head out for a hike! You could even start your own hike club and do this quite regularly with likeminded people.</p>',
-        },
-        {
-          type: "text",
-          content:
-            '<h2>Go to a Kreativmarkt/Clothes swap!</h2><img src="media/creative.jpeg" width=250" height="333"/><p>The student council offers many opportunities for creative markets, clothes swaps, workshops and the like so why not try them out? If you really feel like there is something you want to do that is not currently being offered then why not organise it yourself through the student council? Or simply go crochet in a cafe for a few hours with friends? Doing your hobbies you are interested in with other people is a great way to socialize and get involved as a student!</p>',
-        },
-        {
-          type: "text",
-          content:
-            '<h2>Peer advising and student Council activities</h2><img src="media/peeradvising.jpeg" width=250" height="250"/><p>Participating at student Council events is a unique opportunity to connect with inter cohort students. The variety of those events is incredible and it is also possible to get founding and support for own events. The student Council looks forward to committed and dedicated students that love to put time and effort in the planning of events.<br>To participate singular times in events is possible and completely normal. You will experience a loving and caring atmosphere no matter if and how often you participate. Everyone is glad when people show up but its is also more than just okay to skip events and do something else instead or nothing at all.<br>The peer advising events are the perfect opportunity to get to know your studies, the campus and your own peers better and can really help to get around the first couple of weeks better. It can be an excellent opportunity to meet new friends, get new inputs and expand your own horizon. I highly recommend attending them and asking questions that you care about profoundly.</p>',
-        },
-        {
-          type: "text",
-          content:
-            '<h2>Initiative Schlüsselmensch e.V.</h2><img src="media/schlüsselmensch.jpeg" width=250" height="250"/><p>Participating in the initiative “Schlüsselmensch e.V.” offers you a unique opportunity in Freiburg to become a “buddy” for a child living at the St. Christoph refugee home and to hold a social volunteer position. <br> As a buddy, you will spend time with one child at least two to five times per month, depending on your availability. Together, you can do all kind of leisure activities depending on your interests. <br> In addition, Schlüsselmensch e.V. organizes seasonal group events, such as sports activities, baking sessions, and crafting workshops. They also offer swimming courses and football training and are always happy to welcome motivated new team members.<br>The initiative advocates for improved refugee policies, starting at the local level and extending to federal politics. As a student-led organization, its mission is to empower refugee children in Freiburg through meaningful mentorships. <br>For more information, you can attend one of their introductory meetings, which are a non-binding way to learn more about the organization and explore various volunteer opportunities. <br>If you would like to get involved or learn more, visit their Instagram page @initiative_schluesselmensch_ev or reach out directly via email: mitmachen@initiative-schluesselmesch.org.</p>',
-        },
-        {
-          type: "text",
-          content:
-            '<h2>Explore your surroundings!</h2><img src="media/exploresurroundings.png" width=250" height="250"/><p></p>',
-        },
-        {
-          type: "video",
-          content:
-            '<iframe width=250" height="444" src="https://www.youtube.com/embed/jtllyXDVuQU" frameborder="0" clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-        },
-        {
-          type: "video",
-          content:
-            '<iframe width="250" height="444" src="https://www.youtube.com/embed/c_AJOtSy9pc" frameborder="0" clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-        },
-        {
-          type: "video",
-          content:
-            '<iframe width="250" height="444" src="https://www.youtube.com/embed/0A3J2bD2yTo" frameborder="0" clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-        },
-        {
-          type: "video",
-          content:
-            '<iframe width="250" height="444" src="https://www.youtube.com/embed/7eaCMs1w5JI" frameborder="0" clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-        },
-        {
-          type: "video",
-          content:
-            '<iframe width="250" height="444" src="https://www.youtube.com/embed/9TIGUnnLNTc" frameborder="0" clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-        },
-      ];
-
-      getInvolvedButton.addEventListener("click", () => {
-        const randomOption =
-          options[Math.floor(Math.random() * options.length)];
-        content.innerHTML = randomOption.content;
-      });
-    </script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
